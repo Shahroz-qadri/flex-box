@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f957e44c70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="flex-nav">
+            <a href="#" class="toggleNav">Menu</a>
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+                <li><a href="#">item 5</a></li>
+                <li><a href="#">item 6</a></li>
+                <li class="social">
+                    <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http:/github.com"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
